@@ -5,6 +5,9 @@ import HeroSection from './components/HeroSection';
 import AboutSection from './components/AboutSection';
 import ServicesSection from './components/ServicesSection';
 import WhatsAppIcon from './components/WhatsAppIcon';
+
+import { Routes ,Route } from 'react-router-dom';
+import ContactPage from './pages/ContactPage';
 const App = () => {
   return (
     <div className="bg-gray-50 min-h-screen text-gray-900">
@@ -13,7 +16,9 @@ const App = () => {
       <AboutSection />
       <ServicesSection />
       <WhatsAppIcon />
+     <ContactPage/>
       <Footer />
+
     </div>
   );
 };
