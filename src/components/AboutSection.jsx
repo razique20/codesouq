@@ -3,7 +3,7 @@ import aboutImage from '../assets/logo.jpg'; // Ensure you have the image in the
 
 const AboutSection = () => {
   return (
-    <section id="about" className="py-16 px-4 bg-white">
+    <section id="about" className="py-16 px-4 bg-white min-h-screen">
       <div className="container mx-auto flex justify-center items-center flex-col md:flex-row">
         {/* Left Side Content */}
         <div className="text-center md:text-left max-w-2xl mx-auto md:mx-0 p-5">
