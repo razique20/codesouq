@@ -1,4 +1,3 @@
-import React from "react";
 import { Route, Routes } from "react-router-dom";
 import AboutSection from "./components/AboutSection";
 import Footer from "./components/Footer";

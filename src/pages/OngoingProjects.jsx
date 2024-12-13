@@ -1,4 +1,3 @@
-import React from 'react';
 import deira from "../assets/deiraescapes.jpeg"
 import estaite from "../assets/estaite.png"
 import homewise from "../assets/homewise.png"

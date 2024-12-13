@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-
+import { useState } from "react";
 const ContactPage = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -28,7 +27,7 @@ const ContactPage = () => {
       <div className="container mx-auto text-center">
         <h2 className="text-4xl font-bold mb-6">Contact Us</h2>
         <p className="text-lg text-gray-600 mb-6">
-          We'd love to hear from you! Please fill out the form below or reach us through the contact details provided.
+          We had love to hear from you! Please fill out the form below or reach us through the contact details provided.
         </p>
 
         <div className="grid md:grid-cols-2 gap-12">
