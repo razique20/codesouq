@@ -6,25 +6,15 @@ const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isHomePage, setIsHomePage] = useState(true);
 
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
+  const toggleMenu = () => setMenuOpen(!menuOpen);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > window.innerHeight - 100) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
+      setIsScrolled(window.scrollY > window.innerHeight - 100);
     };
 
     const checkCurrentPage = () => {
-      if (window.location.pathname !== "/") {
-        setIsHomePage(false);
-      } else {
-        setIsHomePage(true);
-      }
+      setIsHomePage(window.location.pathname === "/");
     };
 
     checkCurrentPage();
@@ -53,77 +43,48 @@ const Navbar = () => {
           className="md:hidden flex items-center cursor-pointer"
           onClick={toggleMenu}
         >
-          {menuOpen ? <FaTimes size={30} /> : <FaBars size={30} />}
+          <FaBars size={30} />
         </div>
 
-        {/* Navigation Links */}
-        <ul
-          className={`flex md:flex-row flex-col md:space-x-6 space-y-4 md:space-y-0 absolute md:relative md:top-0 top-16 right-0
-            ${
-              menuOpen
-                ? "bg-white text-black shadow-lg w-full left-0"
-                : isScrolled || !isHomePage
-                ? "bg-white text-black"
-                : "bg-transparent text-gray-200"
-            }
-            md:bg-transparent md:text-inherit md:flex md:justify-end p-4 md:p-0 transition-all duration-300 ${
-              menuOpen ? "block" : "hidden"
-            }`}
-        >
-          <li>
-            <a
-              href="/"
-              className="hover:text-blue-600"
-              onClick={() => setMenuOpen(false)}
-            >
-              Home
-            </a>
-          </li>
-          <li>
-            <a
-              href="/#about"
-              className="hover:text-blue-600"
-              onClick={() => setMenuOpen(false)}
-            >
-              About
-            </a>
-          </li>
-          <li>
-            <a
-              href="/#services"
-              className="hover:text-blue-600"
-              onClick={() => setMenuOpen(false)}
-            >
-              Services
-            </a>
-          </li>
-          <li>
-            <a
-              href="/project"
-              className="hover:text-blue-600"
-              onClick={() => setMenuOpen(false)}
-            >
-              Projects
-            </a>
-          </li>
-          <li>
-            <a
-              href="/contact"
-              className="hover:text-blue-600"
-              onClick={() => setMenuOpen(false)}
-            >
-              Contact
-            </a>
-          </li>
+        {/* Desktop Nav */}
+        <ul className="hidden md:flex md:space-x-6">
+          <li><a href="/" className="hover:text-blue-600">Home</a></li>
+          <li><a href="/#about" className="hover:text-blue-600">About</a></li>
+          <li><a href="/#services" className="hover:text-blue-600">Services</a></li>
+          <li><a href="/project" className="hover:text-blue-600">Projects</a></li>
+          <li><a href="/contact" className="hover:text-blue-600">Contact</a></li>
         </ul>
       </div>
 
-      {/* Full-screen overlay for mobile */}
+      {/* Mobile Menu Overlay */}
       {menuOpen && (
-        <div
-          className="fixed inset-0 bg-black bg-opacity-50 md:hidden transition-all duration-300"
-          onClick={toggleMenu}
-        ></div>
+        <div className="fixed inset-0 bg-white text-black z-50 flex flex-col items-center justify-center transition-all duration-300">
+          {/* Close Button */}
+          <button
+            onClick={toggleMenu}
+            className="absolute top-4 right-4 text-3xl"
+          >
+            <FaTimes />
+          </button>
+
+          <ul className="flex flex-col space-y-6 text-2xl text-center">
+            <li>
+              <a href="/" onClick={toggleMenu} className="hover:text-blue-600">Home</a>
+            </li>
+            <li>
+              <a href="/#about" onClick={toggleMenu} className="hover:text-blue-600">About</a>
+            </li>
+            <li>
+              <a href="/#services" onClick={toggleMenu} className="hover:text-blue-600">Services</a>
+            </li>
+            <li>
+              <a href="/project" onClick={toggleMenu} className="hover:text-blue-600">Projects</a>
+            </li>
+            <li>
+              <a href="/contact" onClick={toggleMenu} className="hover:text-blue-600">Contact</a>
+            </li>
+          </ul>
+        </div>
       )}
     </nav>
   );
