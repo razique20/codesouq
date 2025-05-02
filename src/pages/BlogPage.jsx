@@ -36,7 +36,7 @@ const BlogPage = () => {
   return (
     <section className="min-h-screen bg-white py-16 px-4">
       <div className="container mx-auto text-center mb-12">
-        <h2 className="text-4xl font-bold mb-6 text-gray-800">Our Blog</h2>
+        <h2 className="text-3xl font-bold mb-6 text-gray-800 py-5">Our Blog</h2>
         <p className="text-xl text-gray-600">
           Stay updated with the latest insights, tips, and trends in the world
           of software development, digital marketing, and more.

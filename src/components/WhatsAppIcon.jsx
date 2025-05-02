@@ -3,7 +3,7 @@ import { FaWhatsapp } from 'react-icons/fa';
 
 const WhatsAppIcon = () => {
   // Replace with your own WhatsApp phone number (with country code)
-  const phoneNumber = "1234567890"; // Your WhatsApp phone number here
+  const phoneNumber = "+971504220329"; // Your WhatsApp phone number here
   const message = "Hello, I need help with my project!"; // Optional prefilled message
 
   const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;

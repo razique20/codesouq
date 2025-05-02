@@ -11,6 +11,7 @@ import CookiePolicy from "./pages/CookiePolicy";
 import OngoingProjects from "./pages/OngoingProjects"; // Import the OngoingProjects component
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfPolicy from "./pages/TermsOfPolicy";
+import BlogPage from "./pages/BlogPage";
 
 const App = () => {
   return (
@@ -35,6 +36,7 @@ const App = () => {
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/cookie-policy" element={<CookiePolicy />} />
         <Route path="/careers" element={<CareerPage />} />
+        <Route path="/blog" element={<BlogPage />} />
       </Routes>
       <Footer />
     </div>
