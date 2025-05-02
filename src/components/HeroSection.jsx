@@ -1,26 +1,34 @@
 import React from 'react';
-import bg from "../assets/hero-bg.jpg";
-import bg1 from "../assets/bg-hero.avif";
-
-
+import bgVideo from "../assets/bg-video.mp4"; // Make sure you have a video file inside assets
 
 const HeroSection = () => {
   return (
-    <section
-      className="bg-cover bg-center text-center py-40"
-      style={{ backgroundImage: `url(${bg1})` }} // Fix the backgroundImage URL
-    >
-      <h2 className="text-5xl font-bold mb-6 text-black">Welcome to <span className='text-black font-bold'>CodeSouq</span></h2>
-      <p className="text-xl text-gray-800 mb-6 ">
-        Code, Collaborate, Create—Empowering businesses through innovative digital solutions.
-      </p>
-      <p className="text-lg text-gray-800 mb-6 max-w-3xl mx-auto text1">
-        At CodeSouq, we provide comprehensive software development services that include web, mobile, cloud, and more.
-        Whether you are a startup or an enterprise, we tailor our solutions to meet your unique business needs, ensuring scalable and sustainable growth.
-      </p>
-      <button className="bg-gray-600 text-black py-3 px-6 rounded hover:bg-blue-700">
-        Get Started
-      </button>
+    <section className="relative w-full h-screen flex items-center justify-center overflow-hidden">
+      {/* Video Background */}
+      <video
+        className="absolute top-0 left-0 w-full h-full object-cover"
+        src={bgVideo}
+        autoPlay
+        loop
+        muted
+        playsInline
+      />
+
+      {/* Overlay to make text readable */}
+      <div className="absolute top-0 left-0 w-full h-full bg-black/40"></div>
+
+      {/* Content */}
+      <div className="relative z-10 text-center text-white px-4">
+        <h2 className="text-5xl font-bold mb-6">
+          Welcome to <span className="text-blue-400">CodeSouq</span>
+        </h2>
+        <p className="text-xl text-gray-200 mb-8">
+          Code, Collaborate, Create—Empowering businesses through innovative digital solutions.
+        </p>
+        <button className="bg-blue-600 text-white py-3 px-8 rounded-lg hover:bg-blue-700 transition">
+          Get Started
+        </button>
+      </div>
     </section>
   );
 };

@@ -39,7 +39,7 @@ const OngoingProjects = () => {
                 </div>
               </div>
               <div className="p-6">
-                <h3 className="text-2xl font-bold mb-4 text-center">{project.name}</h3>
+                <h3 className="text-xl font-md mb-4 text-center">{project.name}</h3>
                 {/* <p className="text-gray-600 leading-relaxed text-center">{project.description}</p> */}
               </div>
             </div>

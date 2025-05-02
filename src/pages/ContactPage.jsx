@@ -1,9 +1,9 @@
 import { useState } from "react";
 const ContactPage = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: '',
+    name: "",
+    email: "",
+    message: "",
   });
   const [formSubmitted, setFormSubmitted] = useState(false);
 
@@ -18,7 +18,7 @@ const ContactPage = () => {
     e.preventDefault();
     // Simulate form submission
     setFormSubmitted(true);
-    console.log('Form Submitted', formData);
+    console.log("Form Submitted", formData);
     // You can implement actual API calls here, like sending data to your server
   };
 
@@ -27,7 +27,8 @@ const ContactPage = () => {
       <div className="container mx-auto text-center">
         <h2 className="text-4xl font-bold mb-6">Contact Us</h2>
         <p className="text-lg text-gray-600 mb-6">
-          We had love to hear from you! Please fill out the form below or reach us through the contact details provided.
+          We had love to hear from you! Please fill out the form below or reach
+          us through the contact details provided.
         </p>
 
         <div className="grid md:grid-cols-2 gap-12">
@@ -76,7 +77,9 @@ const ContactPage = () => {
               </button>
               {formSubmitted && (
                 <div className="mt-4 text-green-600">
-                  <p>Thank you for your message! We will get back to you soon.</p>
+                  <p>
+                    Thank you for your message! We will get back to you soon.
+                  </p>
                 </div>
               )}
             </form>
@@ -93,10 +96,10 @@ const ContactPage = () => {
                 <strong>Email:</strong> info@codesouq.com
               </li>
               <li>
-                <strong>Phone:</strong> +971 123 456 789
+                <strong>Phone:</strong> +971 0504220329
               </li>
               <li>
-                <strong>Address:</strong> Dubai Silicon Oasis, Dubai, UAE
+                <strong>Address:</strong> Dubai, UAE
               </li>
             </ul>
 
