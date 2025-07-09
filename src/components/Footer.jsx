@@ -78,7 +78,7 @@ const Footer = () => {
 
         {/* Footer Bottom */}
         <div className="border-t border-gray-700 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-sm">&copy; 2024 CodeSouq. All rights reserved.</p>
+          <p className="text-sm">&copy; 2024 Algorithinn. All rights reserved.</p>
           <div className="mt-4 md:mt-0">
             <select
               className="bg-gray-800 text-gray-300 border border-gray-600 px-4 py-2 rounded"

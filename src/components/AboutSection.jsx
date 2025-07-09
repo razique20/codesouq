@@ -10,13 +10,13 @@ const AboutSection = () => {
         <div className="text-center md:text-left max-w-2xl p-5">
           <h2 className="text-3xl font-bold mb-6">About Us</h2>
           <p className="text-gray-600 mb-6">
-            CodeSouq is a UAE-based software development company dedicated to crafting modern, scalable solutions for your business needs.
+            Algorithinn is a UAE-based software development company dedicated to crafting modern, scalable solutions for your business needs.
           </p>
           <p className="text-gray-600 mb-6">
             Our team is passionate about leveraging technology to help businesses stay ahead of the curve in a competitive digital world.
           </p>
           <p className="text-gray-600">
-            Whether you're a startup or an enterprise, CodeSouq brings your ideas to life through innovative solutions.
+            Whether you're a startup or an enterprise, Algorithinn brings your ideas to life through innovative solutions.
           </p>
         </div>
 
@@ -25,7 +25,7 @@ const AboutSection = () => {
           <div className="relative w-full h-full">
             <img 
               src={aboutImage} 
-              alt="About CodeSouq" 
+              alt="About Algorithinn" 
               className="w-full h-auto object-contain  shadow-lg"
             />
             <div className="absolute inset-0  rounded-xl"></div>

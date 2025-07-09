@@ -11,7 +11,7 @@ const PrivacyPolicy = () => {
           <div>
             <h2 className="text-2xl font-semibold mb-4">1. Introduction</h2>
             <p>
-              Welcome to CodeSouq. Your privacy is important to us. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website and use our services.
+              Welcome to Algorithinn. Your privacy is important to us. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website and use our services.
             </p>
           </div>
 
@@ -59,7 +59,7 @@ const PrivacyPolicy = () => {
           <div>
             <h2 className="text-2xl font-semibold mb-4">7. Your Rights</h2>
             <p>
-              You have the right to access, correct, or delete your personal information. To exercise these rights, please contact us at <span className="text-blue-600 underline">support@codesouq.ae</span>.
+              You have the right to access, correct, or delete your personal information. To exercise these rights, please contact us at <span className="text-blue-600 underline">support@Algorithinn.ae</span>.
             </p>
           </div>
 
@@ -75,7 +75,7 @@ const PrivacyPolicy = () => {
           <div>
             <h2 className="text-2xl font-semibold mb-4">9. Contact Us</h2>
             <p>
-              If you have any questions or concerns about this Privacy Policy, please contact us at <span className="text-blue-600 underline">support@codesouq.ae</span>.
+              If you have any questions or concerns about this Privacy Policy, please contact us at <span className="text-blue-600 underline">support@Algorithinn.ae</span>.
             </p>
           </div>
         </div>

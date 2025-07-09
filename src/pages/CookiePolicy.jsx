@@ -11,7 +11,7 @@ const CookiePolicy = () => {
           <div>
             <h2 className="text-2xl font-semibold mb-4">1. Introduction</h2>
             <p>
-              This Cookie Policy explains how CodeSouq ("we", "us", and "our") uses cookies and similar technologies to recognize you when you visit our website. It explains what these technologies are and why we use them, as well as your rights to control our use of them.
+              This Cookie Policy explains how Algorithinn ("we", "us", and "our") uses cookies and similar technologies to recognize you when you visit our website. It explains what these technologies are and why we use them, as well as your rights to control our use of them.
             </p>
           </div>
 
@@ -68,7 +68,7 @@ const CookiePolicy = () => {
           <div>
             <h2 className="text-2xl font-semibold mb-4">7. Contact Us</h2>
             <p>
-              If you have any questions about our use of cookies or other technologies, please contact us at <span className="text-blue-600 underline">support@codesouq.ae</span>.
+              If you have any questions about our use of cookies or other technologies, please contact us at <span className="text-blue-600 underline">support@Algorithinn.ae</span>.
             </p>
           </div>
         </div>

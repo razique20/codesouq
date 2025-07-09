@@ -36,7 +36,7 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto flex justify-between items-center">
-        <h1 className="text-2xl font-bold">CodeSouq</h1>
+        <h1 className="text-2xl font-bold">Algorithinn</h1>
 
         {/* Hamburger Icon */}
         <div

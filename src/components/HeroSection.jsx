@@ -20,7 +20,7 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative z-10 text-center text-white px-4">
         <h2 className="text-5xl font-bold mb-6">
-          Welcome to <span className="text-blue-400">CodeSouq</span>
+          Welcome to <span className="text-blue-400">Algorithinn</span>
         </h2>
         <p className="text-xl text-gray-200 mb-8">
           Code, Collaborate, Create—Empowering businesses through innovative digital solutions.
