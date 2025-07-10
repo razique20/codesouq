@@ -48,11 +48,11 @@ const Navbar = () => {
 
         {/* Desktop Nav */}
         <ul className="hidden md:flex md:space-x-6">
-          <li><a href="/" className="hover:text-blue-600">Home</a></li>
-          <li><a href="/#about" className="hover:text-blue-600">About</a></li>
-          <li><a href="/#services" className="hover:text-blue-600">Services</a></li>
-          <li><a href="/project" className="hover:text-blue-600">Projects</a></li>
-          <li><a href="/contact" className="hover:text-blue-600">Contact</a></li>
+          <li><a href="/" className="hover:text-secondary">Home</a></li>
+          <li><a href="/#about" className="hover:text-secondary">About</a></li>
+          <li><a href="/#services" className="hover:text-secondary">Services</a></li>
+          <li><a href="/project" className="hover:text-secondary">Projects</a></li>
+          <li><a href="/contact" className="hover:text-secondary">Contact</a></li>
         </ul>
       </div>
 
@@ -69,19 +69,19 @@ const Navbar = () => {
 
           <ul className="flex flex-col space-y-6 text-2xl text-center">
             <li>
-              <a href="/" onClick={toggleMenu} className="hover:text-blue-600">Home</a>
+              <a href="/" onClick={toggleMenu} className="hover:text-secondary">Home</a>
             </li>
             <li>
-              <a href="/#about" onClick={toggleMenu} className="hover:text-blue-600">About</a>
+              <a href="/#about" onClick={toggleMenu} className="hover:text-secondary">About</a>
             </li>
             <li>
-              <a href="/#services" onClick={toggleMenu} className="hover:text-blue-600">Services</a>
+              <a href="/#services" onClick={toggleMenu} className="hover:text-secondary">Services</a>
             </li>
             <li>
-              <a href="/project" onClick={toggleMenu} className="hover:text-blue-600">Projects</a>
+              <a href="/project" onClick={toggleMenu} className="hover:text-secondary">Projects</a>
             </li>
             <li>
-              <a href="/contact" onClick={toggleMenu} className="hover:text-blue-600">Contact</a>
+              <a href="/contact" onClick={toggleMenu} className="hover:text-secondary">Contact</a>
             </li>
           </ul>
         </div>

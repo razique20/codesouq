@@ -12,6 +12,7 @@ import OngoingProjects from "./pages/OngoingProjects"; // Import the OngoingProj
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfPolicy from "./pages/TermsOfPolicy";
 import BlogPage from "./pages/BlogPage";
+import ProjectForm from "./components/ProjectForm";
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
               <HeroSection />
               <AboutSection />
               <ServicesSection />
+              <ProjectForm/>
               <WhatsAppIcon />
               {/* <ContactPage /> */}
             </>

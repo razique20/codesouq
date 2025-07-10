@@ -93,7 +93,7 @@ const ContactPage = () => {
             </p>
             <ul className="space-y-4 text-lg text-gray-700">
               <li>
-                <strong>Email:</strong> info@codesouq.com
+                <strong>Email:</strong> algorithinn@gmail.com
               </li>
               <li>
                 <strong>Phone:</strong> +971 0504220329

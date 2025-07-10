@@ -8,33 +8,33 @@ const ServicesSection = () => {
         <h2 className="text-3xl font-bold mb-6 py-5">Our Services</h2>
         <div className="grid md:grid-cols-3 gap-6">
           <div className="p-6 bg-white rounded shadow hover:shadow-lg">
-            <FaLaptopCode size={40} className="mx-auto mb-4 text-blue-900" />
+            <FaLaptopCode size={40} className="mx-auto mb-4 text-primary" />
             <h3 className="text-xl font-bold mb-2">Web Development</h3>
             <p className="text-gray-900">Modern and scalable web solutions tailored for your business.</p>
           </div>
           <div className="p-6 bg-white rounded shadow hover:shadow-lg">
-            <FaMobileAlt size={40} className="mx-auto mb-4 text-blue-900" />
+            <FaMobileAlt size={40} className="mx-auto mb-4 text-primary" />
             <h3 className="text-xl font-bold mb-2">Mobile Development</h3>
             <p className="text-gray-900">Cutting-edge mobile apps for iOS and Android platforms.</p>
           </div>
           <div className="p-6 bg-white rounded shadow hover:shadow-lg">
-            <FaCloud size={40} className="mx-auto mb-4 text-blue-900" />
+            <FaCloud size={40} className="mx-auto mb-4 text-primary" />
             <h3 className="text-xl font-bold mb-2">Cloud Solutions</h3>
             <p className="text-gray-900">Robust cloud solutions for seamless scalability and growth.</p>
           </div>
           <div className="p-6 bg-white rounded shadow hover:shadow-lg">
-            <FaShoppingCart size={40} className="mx-auto mb-4 text-blue-900" />
+            <FaShoppingCart size={40} className="mx-auto mb-4 text-primary" />
             <h3 className="text-xl font-bold mb-2">E-commerce Development</h3>
             <p className="text-gray-900">Build scalable and user-friendly online stores with robust features and security.</p>
           </div>
           <div className="p-6 bg-white rounded shadow hover:shadow-lg">
-            <FaBullhorn size={40} className="mx-auto mb-4 text-blue-900" />
+            <FaBullhorn size={40} className="mx-auto mb-4 text-primary" />
             <h3 className="text-xl font-bold mb-2">Digital Marketing</h3>
             <p className="text-gray-900">Boost your online presence with effective SEO, social media, and content strategies.</p>
           </div>
           {/* UI/UX Design Service */}
           <div className="p-6 bg-white rounded shadow hover:shadow-lg">
-            <FaPalette size={40} className="mx-auto mb-4 text-blue-900" />
+            <FaPalette size={40} className="mx-auto mb-4 text-primary" />
             <h3 className="text-xl font-bold mb-2">UI/UX Design</h3>
             <p className="text-gray-900">Create intuitive and visually stunning designs for an exceptional user experience.</p>
           </div>

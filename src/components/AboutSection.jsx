@@ -1,5 +1,5 @@
 import React from 'react';
-import aboutImage from '../assets/ai3.jpg'; // Ensure you have the image in the assets folder
+import aboutImage from '../assets/a23.jpg'; // Ensure you have the image in the assets folder
 
 const AboutSection = () => {
   return (
@@ -26,7 +26,7 @@ const AboutSection = () => {
             <img 
               src={aboutImage} 
               alt="About Algorithinn" 
-              className="w-full h-auto object-contain  shadow-lg"
+              className="w-full h-auto object-contain"
             />
             <div className="absolute inset-0  rounded-xl"></div>
           </div>
