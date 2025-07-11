@@ -13,7 +13,7 @@ const WhatsAppIcon = () => {
       href={whatsappLink}
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-5 right-5 bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition duration-300"
+      className="fixed bottom-12 right-5 bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition duration-300"
       style={{ zIndex: 1000 }}
     >
       <FaWhatsapp size={30} />

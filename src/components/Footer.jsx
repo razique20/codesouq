@@ -5,9 +5,14 @@ import {
   FaInstagram,
   FaLinkedin,
   FaTwitter,
+  FaWhatsapp,
 } from "react-icons/fa";
 
 const Footer = () => {
+  const phoneNumber = "+971504220329";
+  const message = "Hello, I need help with my project!";
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className="bg-gray-900 text-gray-300 py-12">
       <div className="container mx-auto px-4">
@@ -16,10 +21,10 @@ const Footer = () => {
           <div>
             <h3 className="text-white font-bold mb-4">SERVICES</h3>
             <ul className="space-y-2">
-              <li>Web Development</li>
-              <li>Mobile Development</li>
-              <li>Cloud Solutions</li>
-              <li>Consulting</li>
+              <li><span>Web Development</span></li>
+              <li><span>Mobile Development</span></li>
+              <li><span>Cloud Solutions</span></li>
+              <li><span>Consulting</span></li>
             </ul>
           </div>
 
@@ -27,10 +32,10 @@ const Footer = () => {
           <div>
             <h3 className="text-white font-bold mb-4">ABOUT</h3>
             <ul className="space-y-2">
-              <li>Our Team</li>
-              <a href="careers"><li>Careers</li></a>
-              <a href="blog"><li>Blog</li></a>
-              <a href="contact"><li>Contact Us</li></a>
+              <li><a href="/our-team" className="hover:text-white transition">Our Team</a></li>
+              <li><a href="/careers" className="hover:text-white transition">Careers</a></li>
+              <li><a href="/blog" className="hover:text-white transition">Blog</a></li>
+              <li><a href="/contact" className="hover:text-white transition">Contact Us</a></li>
             </ul>
           </div>
 
@@ -38,15 +43,9 @@ const Footer = () => {
           <div>
             <h3 className="text-white font-bold mb-4">LEGAL</h3>
             <ul className="space-y-2">
-              <li>
-                <a href="/terms-of-policy" className="hover:text-white transition">Terms of Service</a>
-              </li>
-              <li>
-                <a href="/privacy-policy" className="hover:text-white transition">Privacy Policy</a>
-              </li>
-              <li>
-                <a href="/cookie-policy" className="hover:text-white transition">Cookie Policy</a>
-              </li>
+              <li><a href="/terms-of-policy" className="hover:text-white transition">Terms of Service</a></li>
+              <li><a href="/privacy-policy" className="hover:text-white transition">Privacy Policy</a></li>
+              <li><a href="/cookie-policy" className="hover:text-white transition">Cookie Policy</a></li>
             </ul>
           </div>
 
@@ -54,20 +53,25 @@ const Footer = () => {
           <div>
             <h3 className="text-white font-bold mb-4">FOLLOW US</h3>
             <div className="flex space-x-4 mb-4">
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                 <FaFacebook className="text-blue-600 text-2xl hover:scale-110 transition-transform" />
               </a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
                 <FaTwitter className="text-blue-400 text-2xl hover:scale-110 transition-transform" />
               </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                 <FaInstagram className="text-pink-600 text-2xl hover:scale-110 transition-transform" />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                 <FaLinkedin className="text-blue-700 text-2xl hover:scale-110 transition-transform" />
               </a>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-                <FaGithub className="text-gray-300 text-2xl hover:scale-110 transition-transform" />
+              <a
+                href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="WhatsApp"
+              >
+                <FaWhatsapp className="text-green-700 text-2xl hover:scale-110 transition-transform" />
               </a>
             </div>
             <p className="text-gray-400 text-sm">
@@ -78,7 +82,7 @@ const Footer = () => {
 
         {/* Footer Bottom */}
         <div className="border-t border-gray-700 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-sm">&copy; 2024 Algorithinn. All rights reserved.</p>
+          <p className="text-sm">&copy; {currentYear} Algorithinn. All rights reserved.</p>
           <div className="mt-4 md:mt-0">
             <select
               className="bg-gray-800 text-gray-300 border border-gray-600 px-4 py-2 rounded"

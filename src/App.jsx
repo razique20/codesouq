@@ -13,6 +13,7 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfPolicy from "./pages/TermsOfPolicy";
 import BlogPage from "./pages/BlogPage";
 import ProjectForm from "./components/ProjectForm";
+import CookieConsent from "./components/CookieConsent";
 
 const App = () => {
   return (
@@ -27,7 +28,8 @@ const App = () => {
               <AboutSection />
               <ServicesSection />
               <ProjectForm/>
-              <WhatsAppIcon />
+              {/* <WhatsAppIcon /> */}
+              <CookieConsent/>
               {/* <ContactPage /> */}
             </>
           }
