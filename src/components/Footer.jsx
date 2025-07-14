@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import {
   FaFacebook,
   FaGithub,
@@ -32,10 +33,10 @@ const Footer = () => {
           <div>
             <h3 className="text-white font-bold mb-4">ABOUT</h3>
             <ul className="space-y-2">
-              <li><a href="/our-team" className="hover:text-white transition">Our Team</a></li>
-              <li><a href="/careers" className="hover:text-white transition">Careers</a></li>
-              <li><a href="/blog" className="hover:text-white transition">Blog</a></li>
-              <li><a href="/contact" className="hover:text-white transition">Contact Us</a></li>
+              <li><Link href="/our-team" className="hover:text-white transition">Our Team</Link></li>
+              <li><Link href="/careers" className="hover:text-white transition">Careers</Link></li>
+              <li><Link href="/blog" className="hover:text-white transition">Blog</Link></li>
+              <li><Link href="/contact" className="hover:text-white transition">Contact Us</Link></li>
             </ul>
           </div>
 
@@ -43,9 +44,9 @@ const Footer = () => {
           <div>
             <h3 className="text-white font-bold mb-4">LEGAL</h3>
             <ul className="space-y-2">
-              <li><a href="/terms-of-policy" className="hover:text-white transition">Terms of Service</a></li>
-              <li><a href="/privacy-policy" className="hover:text-white transition">Privacy Policy</a></li>
-              <li><a href="/cookie-policy" className="hover:text-white transition">Cookie Policy</a></li>
+              <li><Link href="/terms-of-policy" className="hover:text-white transition">Terms of Service</Link></li>
+              <li><Link href="/privacy-policy" className="hover:text-white transition">Privacy Policy</Link></li>
+              <li><Link href="/cookie-policy" className="hover:text-white transition">Cookie Policy</Link></li>
             </ul>
           </div>
 
@@ -85,6 +86,7 @@ const Footer = () => {
           <p className="text-sm">&copy; {currentYear} Algorithinn. All rights reserved.</p>
           <div className="mt-4 md:mt-0">
             <select
+              aria-label="Select language"
               className="bg-gray-800 text-gray-300 border border-gray-600 px-4 py-2 rounded"
               defaultValue="English"
             >

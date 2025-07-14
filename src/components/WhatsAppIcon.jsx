@@ -15,6 +15,7 @@ const WhatsAppIcon = () => {
       rel="noopener noreferrer"
       className="fixed bottom-12 right-5 bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition duration-300"
       style={{ zIndex: 1000 }}
+      aria-label="Chat with us on WhatsApp"
     >
       <FaWhatsapp size={30} />
     </a>

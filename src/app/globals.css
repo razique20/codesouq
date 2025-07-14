@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Playwrite+TZ+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-dark: #1a0633;
+  --primary-mid: #2e1065;
+  --primary-light: #4c1d95;
+  --accent: #7e22ce;
+  --text-primary: #f3e8ff;
+  --text-secondary: #d8b4fe;
+}
+
+* {
+  font-family: "Outfit", sans-serif;
+  color: var(--text-primary);
+}
+
+body {
+  background: linear-gradient(135deg, var(--primary-dark) 0%, #0d021a 30%, #000000 100%);
+  min-height: 100vh;
+  background-attachment: fixed;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* Modern grid pattern with better performance */
+.bg-grid-pattern {
+  position: relative;
+  isolation: isolate;
+}
+
+.bg-grid-pattern::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(to right, rgba(168, 85, 247, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(168, 85, 247, 0.03) 1px, transparent 1px);
+  background-size: 2.5rem 2.5rem;
+  z-index: -1;
+}
+
+/* Text highlights */
+.text-accent {
+  color: var(--accent);
+}
+
+/* Responsive typography */
+h1, h2, h3, h4 {
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+}
+
+h2 {
+  font-size: clamp(1.8rem, 4vw, 3rem);
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom selection color */
+::selection {
+  background: var(--accent);
+  color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .bg-grid-pattern::before {
+    background-size: 1.8rem 1.8rem;
+  }
+  
+  body {
+    background: linear-gradient(135deg, var(--primary-dark) 0%, #000000 100%);
+  }
+}
+
+/* Animation for interactive elements */
+button, a {
+  transition: all 0.3s ease;
+}
+
+button:hover, a:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+}
