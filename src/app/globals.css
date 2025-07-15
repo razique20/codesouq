@@ -98,3 +98,9 @@ button:hover, a:hover {
   transform: translateY(-2px);
   filter: brightness(1.1);
 }
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+}

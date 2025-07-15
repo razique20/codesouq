@@ -1,7 +1,7 @@
 // src/components/ProjectForm.jsx
 "use client";
 
-import React, { useState, useRef, useEffect } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 const countries = [
   "United Arab Emirates",
@@ -60,8 +60,8 @@ const ProjectForm = () => {
     setIsSubmitting(true);
 
     // Simulate form submission with a delay
-    await new Promise(resolve => setTimeout(resolve, 1500));
-    
+    await new Promise((resolve) => setTimeout(resolve, 1500));
+
     setIsSuccess(true);
     setIsSubmitting(false);
     setFormData({
@@ -71,29 +71,42 @@ const ProjectForm = () => {
       types: [],
       description: "",
     });
-    
+
     // Scroll to success message
     if (successRef.current) {
-      successRef.current.scrollIntoView({ behavior: 'smooth' });
+      successRef.current.scrollIntoView({ behavior: "smooth" });
     }
   };
 
   return (
     <div className="max-w-4xl mx-auto p-4">
       {isSuccess && (
-        <div 
+        <div
           ref={successRef}
           className="max-w-2xl mx-auto bg-emerald-900/70 backdrop-blur-sm border border-emerald-500/50 rounded-xl mb-6 p-5 text-center animate-fade-in"
         >
           <div className="flex items-center justify-center gap-3">
             <div className="bg-emerald-500 p-1.5 rounded-full">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M5 13l4 4L19 7"
+                />
               </svg>
             </div>
             <div>
               <h3 className="text-xl font-bold text-emerald-100">Success!</h3>
-              <p className="text-emerald-200">We've received your project request.</p>
+              <p className="text-emerald-200">
+                We've received your project request.
+              </p>
             </div>
           </div>
         </div>
@@ -106,7 +119,7 @@ const ProjectForm = () => {
         {/* Decorative elements */}
         <div className="absolute -top-32 -right-32 w-64 h-64 bg-indigo-700/20 rounded-full blur-3xl -z-10"></div>
         <div className="absolute -bottom-32 -left-32 w-64 h-64 bg-purple-700/20 rounded-full blur-3xl -z-10"></div>
-        
+
         <div className="relative z-10">
           <div className="text-center mb-8">
             <h2 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-purple-400 via-indigo-300 to-cyan-300 bg-clip-text text-transparent">
@@ -133,7 +146,7 @@ const ProjectForm = () => {
                   required
                 />
               </div>
-              
+
               <div>
                 <label className="block text-sm font-medium text-gray-300 mb-2">
                   Your Email
@@ -148,7 +161,7 @@ const ProjectForm = () => {
                   required
                 />
               </div>
-              
+
               <div className="md:col-span-2">
                 <label className="block text-sm font-medium text-gray-300 mb-2">
                   Country
@@ -164,7 +177,11 @@ const ProjectForm = () => {
                     Select your country
                   </option>
                   {countries.map((country, idx) => (
-                    <option key={idx} value={country} className="text-gray-200 bg-gray-800">
+                    <option
+                      key={idx}
+                      value={country}
+                      className="text-gray-200 bg-gray-800"
+                    >
                       {country}
                     </option>
                   ))}
@@ -194,14 +211,25 @@ const ProjectForm = () => {
                       onChange={handleChange}
                       className="sr-only"
                     />
-                    <div className={`w-5 h-5 rounded flex items-center justify-center ${
-                      formData.types.includes(type)
-                        ? "bg-indigo-500"
-                        : "bg-gray-700 border border-gray-600"
-                    }`}>
+                    <div
+                      className={`w-5 h-5 rounded flex items-center justify-center ${
+                        formData.types.includes(type)
+                          ? "bg-indigo-500"
+                          : "bg-gray-700 border border-gray-600"
+                      }`}
+                    >
                       {formData.types.includes(type) && (
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-3.5 w-3.5 text-white" viewBox="0 0 20 20" fill="currentColor">
-                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="h-3.5 w-3.5 text-white"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                        >
+                          <path
+                            fillRule="evenodd"
+                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                            clipRule="evenodd"
+                          />
                         </svg>
                       )}
                     </div>
@@ -228,24 +256,49 @@ const ProjectForm = () => {
               type="submit"
               disabled={isSubmitting}
               className={`w-full py-3.5 px-6 rounded-xl font-medium text-white transition-all flex items-center justify-center gap-2 ${
-                isSubmitting 
-                  ? "bg-indigo-800 cursor-not-allowed" 
+                isSubmitting
+                  ? "bg-indigo-800 cursor-not-allowed"
                   : "bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 shadow-lg shadow-indigo-900/30"
               }`}
             >
               {isSubmitting ? (
                 <>
-                  <svg className="animate-spin -ml-1 mr-2 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                    <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
-                    <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                  <svg
+                    className="animate-spin -ml-1 mr-2 h-5 w-5 text-white"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <circle
+                      className="opacity-25"
+                      cx="12"
+                      cy="12"
+                      r="10"
+                      stroke="currentColor"
+                      strokeWidth="4"
+                    ></circle>
+                    <path
+                      className="opacity-75"
+                      fill="currentColor"
+                      d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                    ></path>
                   </svg>
                   Processing...
                 </>
               ) : (
                 <>
                   Submit Project
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                    <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
+                      clipRule="evenodd"
+                    />
                   </svg>
                 </>
               )}
