@@ -2,6 +2,7 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import Link from "next/link";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -56,12 +57,16 @@ const Navbar = () => {
 
           {/* Mobile: Show only logo */}
           <div className="md:hidden w-10 h-10">
-            <Image
+            <Link href="/">
+             <Image
               src="/assets/logo.png"
               alt="Algorithinn Logo"
               width={40}
               height={40}
             />
+            
+            </Link>
+           
           </div>
         </div>
 
