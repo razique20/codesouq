@@ -1,7 +1,7 @@
 "use client";
-import React, { useState, useEffect } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
 import Image from "next/image";
+import React, { useEffect, useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -70,7 +70,13 @@ const Navbar = () => {
           {["Home", "About", "Services", "Projects", "Contact"].map((item) => (
             <li key={item}>
               <a
-                href={item === "Home" ? "/" : `/#${item.toLowerCase()}`}
+                href={
+                  item === "Home"
+                    ? "/"
+                    : item === "Contact"
+                    ? "/contact"
+                    : `/#${item.toLowerCase()}`
+                }
                 className="text-gray-200 hover:text-purple-300 transition-all duration-300 font-medium text-lg relative group py-2"
               >
                 {item}
@@ -140,7 +146,13 @@ const Navbar = () => {
                 (item, index) => (
                   <li key={item} className="overflow-hidden">
                     <a
-                      href={item === "Home" ? "/" : `/#${item.toLowerCase()}`}
+                      href={
+                        item === "Home"
+                          ? "/"
+                          : item === "Contact"
+                          ? "/contact"
+                          : `/#${item.toLowerCase()}`
+                      }
                       onClick={toggleMenu}
                       className={`block text-xl font-medium text-gray-200 hover:text-purple-300 transition-all duration-300 py-3 px-6 rounded-xl ${
                         menuOpen
@@ -179,7 +191,9 @@ const Navbar = () => {
             <p className="text-gray-400 text-sm">
               © {new Date().getFullYear()} Algorithinn
             </p>
-            <p className="text-purple-400/60 text-xs mt-1">Innovating Tomorrow</p>
+            <p className="text-purple-400/60 text-xs mt-1">
+              Innovating Tomorrow
+            </p>
           </div>
         </div>
       </div>

@@ -203,11 +203,11 @@ const HeroSection = () => {
           transition={{ duration: 0.8 }}
         >
           <div className="absolute -inset-3 bg-purple-900 rounded-full blur-lg opacity-10 animate-pulse-slow"></div>
-          <div className="relative bg-gradient-to-r from-purple-900/40 to-violet-800/40 border border-purple-700/20 rounded-full px-4 py-2 md:px-6 md:py-3">
+          {/* <div className="relative bg-gradient-to-r from-purple-900/40 to-violet-800/40 border border-purple-700/20 rounded-full px-4 py-2 md:px-6 md:py-3">
             <span className="text-purple-300 text-xs sm:text-sm md:text-base font-medium tracking-wider">
-              INNOVATING THE FUTURE
+             Intelligence. Innovated.
             </span>
-          </div>
+          </div> */}
         </motion.div>
         
         <motion.h1 
@@ -222,7 +222,7 @@ const HeroSection = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4 }}
           >
-            Welcome to
+         
           </motion.span>
           <motion.span 
             className="relative inline-block mt-2 md:mt-4"
@@ -233,12 +233,12 @@ const HeroSection = () => {
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-300 via-violet-200 to-purple-300">
               Algorithinn
             </span>
-            <motion.span 
+            {/* <motion.span 
               className="absolute -bottom-1 md:-bottom-2 left-0 w-full h-0.5 bg-gradient-to-r from-purple-500 to-violet-500 rounded-full"
               initial={{ scaleX: 0 }}
               animate={{ scaleX: 1 }}
               transition={{ delay: 0.9, duration: 0.8 }}
-            />
+            /> */}
           </motion.span>
         </motion.h1>
         
@@ -248,7 +248,7 @@ const HeroSection = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.8 }}
         >
-          Transforming ideas into cutting-edge digital experiences. We craft innovative solutions that empower businesses to thrive in the digital landscape.
+          At Algorithinn, we craft algorithms for business growth.
         </motion.p>
         
         <motion.div 
