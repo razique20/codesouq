@@ -1,17 +1,16 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import dynamic from "next/dynamic";
 
-// Import your components
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import CookieConsent from "../components/CookieConsent";
-import WhatsAppIcon from "../components/WhatsAppIcon";
+const Navbar = dynamic(() => import("../components/Navbar"));
+const Footer = dynamic(() => import("../components/Footer"));
+const CookieConsent = dynamic(() => import("../components/CookieConsent"));
+const WhatsAppIcon = dynamic(() => import("../components/WhatsAppIcon"));
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
-
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
@@ -25,6 +24,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}>
         <Navbar />
         <main className="flex-grow">{children}</main>
