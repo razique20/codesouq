@@ -13,7 +13,7 @@
   --text-secondary: #d8b4fe;
 }
 
-* {
+body, h1, h2, h3, h4, h5, h6, span, div, li, a {
   font-family: "Outfit", sans-serif;
   color: var(--text-primary);
 }
@@ -21,7 +21,7 @@
 body {
   background: linear-gradient(135deg, var(--primary-dark) 0%, #0d021a 30%, #000000 100%);
   min-height: 100vh;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
 }
 
 p {
@@ -94,9 +94,11 @@ button, a {
   transition: all 0.3s ease;
 }
 
-button:hover, a:hover {
-  transform: translateY(-2px);
-  filter: brightness(1.1);
+@media (hover: hover) {
+  button:hover, a:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.05);
+  }
 }
 
 html {
