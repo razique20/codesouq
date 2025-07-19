@@ -101,8 +101,13 @@ button, a {
   }
 }
 
-html {
+body {
+  overscroll-behavior: none; /* prevents rubber-band effect */
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -webkit-overflow-scrolling: touch;
+}
+
+html {
+  background-color: #0d021a; /* fallback of your gradient */
 }
