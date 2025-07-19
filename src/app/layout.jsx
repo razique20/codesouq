@@ -20,7 +20,7 @@ export const metadata = {
   title: "Algrithinn",
   description: "Intelligence,Innovated,",
   icons:{
-    icon:"./assets/favicon.svg"
+    icon:"/favicon.svg"
   }
 };
 
