@@ -43,7 +43,7 @@ const Navbar = () => {
               className="h-8 w-auto md:hidden"
             />
             {/* Desktop: show text */}
-            <span className="text-transparent  font-bold bg-clip-text bg-gradient-to-r from-white via-violet-200 to-purple-300">
+            <span className="text-transparent  font-bold bg-clip-text bg-gradient-to-r from-white via-violet-200 to-purple-300 hidden md:visible">
               Algorithinn
             </span>
           </Link>
