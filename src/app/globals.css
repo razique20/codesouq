@@ -111,3 +111,8 @@ body {
 html {
   background-color: #0d021a; /* fallback of your gradient */
 }
+
+
+body {
+  min-height: 100dvh;
+}
