@@ -49,11 +49,13 @@ const Navbar = () => {
         {/* Logo/Brand */}
         <div className="flex items-center">
           {/* Desktop: Show full name only */}
+          <Link href='/'>
           <div className="hidden md:flex items-center">
             <h1 className="text-2xl lg:text-3xl font-bold bg-gradient-to-r from-purple-400 via-purple-300 to-indigo-300 bg-clip-text text-transparent tracking-wide">
               Algorithinn
             </h1>
           </div>
+          </Link>
 
           {/* Mobile: Show only logo */}
           <div className="md:hidden w-10 h-10">
