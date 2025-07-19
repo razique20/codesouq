@@ -35,19 +35,25 @@ const Navbar = () => {
         }`}
       >
         <div className="max-w-7xl mx-auto flex justify-between items-center">
-          <Link
-            href="/"
-            className="text-white font-extrabold text-xl md:text-2xl tracking-tight"
-          >
-            Algorithinn
+          <Link href="/" aria-label="Home">
+            {/* Mobile: show logo image */}
+            <img
+              src="/assets/logo.png"
+              alt="Algorithinn Logo"
+              className="h-8 w-auto md:hidden"
+            />
+            {/* Desktop: show text */}
+            <span className="text-transparent  font-bold bg-clip-text bg-gradient-to-r from-white via-violet-200 to-purple-300">
+              Algorithinn
+            </span>
           </Link>
 
           {/* Desktop nav items */}
-          <ul className="hidden md:flex space-x-10 text-white font-medium text-lg">
+          <ul className="hidden md:flex space-x-10 text-white font-medium text-md">
             {navItems.map((item) => (
               <li key={item}>
                 <Link
-                  href={`#${item.toLowerCase()}`}
+                  href={item === "Projects" ? "/projects" : `/#${item.toLowerCase()}`}
                   className="hover:text-purple-400 transition-colors"
                 >
                   {item}
@@ -78,7 +84,13 @@ const Navbar = () => {
             className="fixed inset-0 z-[100] bg-gradient-to-br from-[#0f051d] via-purple-900 to-black/90 backdrop-blur-md text-white px-8 py-16"
           >
             <div className="flex justify-between items-center mb-16">
-              <h2 className="text-2xl font-bold">Algorithinn</h2>
+              <Link href="/" onClick={() => setMenuOpen(false)}>
+                <img
+                  src="/assets/logo.png"
+                  alt="Algorithinn Logo"
+                  className="h-10 w-auto"
+                />
+              </Link>
               <button
                 onClick={() => setMenuOpen(false)}
                 className="text-white text-3xl"
@@ -97,7 +109,7 @@ const Navbar = () => {
                   transition={{ delay: 0.1 * navItems.indexOf(item) }}
                 >
                   <Link
-                    href={`#${item.toLowerCase()}`}
+                   href={item === "Projects" ? "/projects" : `/#${item.toLowerCase()}`}
                     onClick={() => setMenuOpen(false)}
                     className="hover:text-purple-400 transition-colors"
                   >

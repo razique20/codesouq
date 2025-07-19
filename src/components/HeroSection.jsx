@@ -274,7 +274,7 @@ const HeroSection = () => {
             <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-violet-600 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-0"></div>
           </motion.button>
           
-          <motion.button 
+          {/* <motion.button 
             className="relative group bg-transparent border border-purple-700/30 hover:border-purple-500/50 transition-all text-white font-medium py-2.5 px-6 md:py-3 md:px-8 rounded-lg text-sm md:text-base"
             whileHover={{ 
               scale: 1.05,
@@ -288,7 +288,7 @@ const HeroSection = () => {
               </svg>
               <span>View Projects</span>
             </span>
-          </motion.button>
+          </motion.button> */}
         </motion.div>
       </div>
 
