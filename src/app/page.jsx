@@ -2,6 +2,7 @@ import HeroSection from '../components/HeroSection';
 import AboutSection from '../components/AboutSection';
 import ServicesSection from '../components/ServicesSection';
 import ProjectForm from '../components/ProjectForm';
+import TechnologyExpertise from '@/components/TechnologyExpertise';
 
 export default function HomePage() {
   return (
@@ -18,6 +19,8 @@ export default function HomePage() {
         
         <HeroSection />
         <AboutSection />
+        <TechnologyExpertise/>
+        
         <ServicesSection />
         <ProjectForm />
       </div>

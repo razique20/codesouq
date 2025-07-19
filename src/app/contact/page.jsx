@@ -24,71 +24,83 @@ export default function ContactPage() {
   };
 
   return (
-    <section id="contact" className="py-20 px-4 bg-gray-100">
-      <div className="container mx-auto text-center">
-        <h2 className="text-4xl font-bold mb-6">Contact Us</h2>
-        <p className="text-lg text-gray-600 mb-6">
-          We’d love to hear from you! Please fill out the form below or reach
-          us through the contact details provided.
-        </p>
+    <section
+      id="contact"
+      className="py-20 px-4 bg-gradient-to-br from-gray-950 via-gray-900 to-black overflow-hidden"
+    >
+      <div className="max-w-6xl mx-auto relative z-10">
+        {/* Decorative blobs */}
+        <div className="absolute -top-32 -right-32 w-64 h-64 bg-indigo-700/20 rounded-full blur-3xl -z-10" />
+        <div className="absolute -bottom-32 -left-32 w-64 h-64 bg-purple-700/20 rounded-full blur-3xl -z-10" />
 
-        <div className="grid md:grid-cols-2 gap-12">
-          <div>
-            <h3 className="text-2xl font-semibold mb-4">Send Us a Message</h3>
-            <form onSubmit={handleSubmit}>
-              <div className="mb-4">
-                <input
-                  type="text"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  placeholder="Your Name"
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  required
-                />
-              </div>
-              <div className="mb-4">
-                <input
-                  type="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  placeholder="Your Email"
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  required
-                />
-              </div>
-              <div className="mb-4">
-                <textarea
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  placeholder="Your Message"
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  rows="6"
-                  required
-                ></textarea>
-              </div>
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-purple-400 via-indigo-300 to-cyan-300 bg-clip-text text-transparent">
+            Contact Us
+          </h2>
+          <p className="mt-2 text-gray-400 max-w-2xl mx-auto">
+            We’d love to hear from you! Fill out the form or reach us through the info below.
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-10">
+          {/* Contact Form */}
+          <div className="bg-gray-900/70 backdrop-blur-lg border border-indigo-900/50 rounded-2xl p-6 md:p-8 shadow-2xl shadow-indigo-950/50">
+            <h3 className="text-xl font-semibold text-cyan-100 mb-6">
+              Send Us a Message
+            </h3>
+            <form onSubmit={handleSubmit} className="space-y-5">
+              <input
+                type="text"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                placeholder="Your Name"
+                className="w-full bg-gray-800/60 border border-gray-700 rounded-xl py-3 px-4 text-gray-200 placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500/50 focus:border-indigo-500 transition-all"
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                placeholder="Your Email"
+                className="w-full bg-gray-800/60 border border-gray-700 rounded-xl py-3 px-4 text-gray-200 placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500/50 focus:border-indigo-500 transition-all"
+                required
+              />
+              <textarea
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+                placeholder="Your Message"
+                rows="6"
+                className="w-full bg-gray-800/60 border border-gray-700 rounded-xl py-3 px-4 text-gray-200 placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500/50 focus:border-indigo-500 transition-all"
+                required
+              ></textarea>
+
               <button
                 type="submit"
-                className="bg-blue-600 text-white py-3 px-6 rounded hover:bg-blue-700"
+                className="w-full py-3.5 px-6 rounded-xl font-medium text-white bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 shadow-lg shadow-indigo-900/30 transition-all"
               >
                 Send Message
               </button>
+
               {formSubmitted && (
-                <div className="mt-4 text-green-600">
-                  <p>Thank you for your message! We will get back to you soon.</p>
+                <div className="mt-4 text-emerald-400 text-center">
+                  Thank you! We’ll get back to you shortly.
                 </div>
               )}
             </form>
           </div>
 
-          <div>
-            <h3 className="text-2xl font-semibold mb-4">Contact Information</h3>
-            <p className="text-lg text-gray-600 mb-4">
-              You can also reach us through the following methods:
+          {/* Contact Info */}
+          <div className="bg-gray-900/70 backdrop-blur-lg border border-indigo-900/50 rounded-2xl p-6 md:p-8 shadow-2xl shadow-indigo-950/50">
+            <h3 className="text-xl font-semibold text-cyan-100 mb-4">
+              Contact Information
+            </h3>
+            <p className="text-gray-400 mb-6">
+              You can also reach us through the following:
             </p>
-            <ul className="space-y-4 text-lg text-gray-700 text-left">
+            <ul className="space-y-4 text-gray-300 text-base">
               <li>
                 <strong>Email:</strong> algorithinn@gmail.com
               </li>

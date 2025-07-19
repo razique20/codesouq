@@ -1,66 +1,73 @@
-export default function CookiePolicy() {
+const CookiePolicy = () => {
   return (
-    <section className="min-h-screen bg-white px-6 py-20 flex items-center justify-center">
-      <div className="max-w-4xl w-full">
-        <h1 className="text-4xl font-bold text-center mb-10">Cookie Policy</h1>
+    <section className="min-h-screen px-6 py-20 flex items-center justify-center bg-gradient-to-br from-[#0f172a] to-[#1e293b] text-white">
+      <div className="max-w-4xl w-full bg-white/5 backdrop-blur-sm rounded-2xl p-8 shadow-xl border border-white/10">
+        <h1 className="text-4xl font-bold text-center mb-10 text-cyan-300">
+          Cookie Policy
+        </h1>
 
-        <div className="space-y-8 text-gray-700">
+        <div className="space-y-8 text-gray-200">
           <div>
-            <h2 className="text-2xl font-semibold mb-4">1. Introduction</h2>
+            <h2 className="text-2xl font-semibold mb-4 text-white">1. Introduction</h2>
             <p>
-              This Cookie Policy explains how Algorithinn ("we", "us", and "our") uses cookies and similar technologies to recognize you when you visit our website. It explains what these technologies are and why we use them, as well as your rights to control our use of them.
+              This Cookie Policy explains how AlgorithInn uses cookies and similar technologies to recognize you when you visit our website.
             </p>
           </div>
 
           <div>
-            <h2 className="text-2xl font-semibold mb-4">2. What are Cookies?</h2>
+            <h2 className="text-2xl font-semibold mb-4 text-white">2. What are Cookies?</h2>
             <p>
-              Cookies are small data files that are placed on your device when you visit a website. Cookies are widely used to make websites work more efficiently, as well as to provide reporting information and assist with marketing activities.
+              Cookies are small files stored on your device that help websites remember information about your visit.
             </p>
           </div>
 
           <div>
-            <h2 className="text-2xl font-semibold mb-4">3. Why We Use Cookies</h2>
-            <ul className="list-disc list-inside mt-2 ml-4">
-              <li>Recognize your device and settings for a smoother user experience</li>
-              <li>Track website usage and performance</li>
-              <li>Enhance functionality and personalize content</li>
-              <li>Analyze trends and improve our services</li>
+            <h2 className="text-2xl font-semibold mb-4 text-white">3. Why We Use Cookies</h2>
+            <ul className="list-disc list-inside ml-4">
+              <li>Enhance user experience</li>
+              <li>Track performance and usage</li>
+              <li>Personalize content</li>
+              <li>Analyze and improve services</li>
             </ul>
           </div>
 
           <div>
-            <h2 className="text-2xl font-semibold mb-4">4. Types of Cookies We Use</h2>
+            <h2 className="text-2xl font-semibold mb-4 text-white">4. Types of Cookies</h2>
             <p>
-              <strong>Essential Cookies:</strong> Necessary for the operation of our website.<br />
-              <strong>Performance Cookies:</strong> Help us measure and improve website performance.<br />
-              <strong>Functionality Cookies:</strong> Remember your preferences for a customized experience.<br />
-              <strong>Analytics and Tracking Cookies:</strong> Collect information to help us understand user interaction.
+              <strong>Essential:</strong> Required for core functionality<br />
+              <strong>Performance:</strong> Measure how the site is used<br />
+              <strong>Functional:</strong> Remember preferences<br />
+              <strong>Analytics:</strong> Understand behavior
             </p>
           </div>
 
           <div>
-            <h2 className="text-2xl font-semibold mb-4">5. Managing Cookies</h2>
+            <h2 className="text-2xl font-semibold mb-4 text-white">5. Managing Cookies</h2>
             <p>
-              You can control and manage cookies through your browser settings. You can choose to block or delete cookies, but this may impact your experience on our website.
+              You can disable cookies through your browser settings. Note that some site functions may not work correctly if cookies are turned off.
             </p>
           </div>
 
           <div>
-            <h2 className="text-2xl font-semibold mb-4">6. Changes to This Cookie Policy</h2>
+            <h2 className="text-2xl font-semibold mb-4 text-white">6. Updates</h2>
             <p>
-              We may update this Cookie Policy from time to time to reflect changes to our cookies or for operational, legal, or regulatory reasons. Please revisit this page regularly to stay informed.
+              This policy may be updated from time to time. Please review it periodically for the latest information.
             </p>
           </div>
 
           <div>
-            <h2 className="text-2xl font-semibold mb-4">7. Contact Us</h2>
+            <h2 className="text-2xl font-semibold mb-4 text-white">7. Contact Us</h2>
             <p>
-              If you have any questions about our use of cookies or other technologies, please contact us at <span className="text-blue-600 underline">support@Algorithinn.ae</span>.
+              Questions? Contact us at{" "}
+              <a href="mailto:support@algorithinn.ae" className="text-cyan-400 underline">
+                support@algorithinn.ae
+              </a>.
             </p>
           </div>
         </div>
       </div>
     </section>
   );
-}
+};
+
+export default CookiePolicy;

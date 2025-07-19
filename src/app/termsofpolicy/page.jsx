@@ -1,78 +1,63 @@
-const TermsOfPolicy = () => {
+const TermsOfService = () => {
   return (
-    <section className="min-h-screen bg-white px-6 py-20 flex items-center justify-center">
-      <div className="max-w-4xl w-full">
-        <h1 className="text-2xl font-bold text-center mb-10">
-          Terms of Policy
+    <section className="min-h-screen px-6 py-20 flex items-center justify-center bg-gradient-to-br from-[#0f172a] to-[#1e293b] text-white">
+      <div className="max-w-4xl w-full bg-white/5 backdrop-blur-sm rounded-2xl p-8 shadow-xl border border-white/10">
+        <h1 className="text-4xl font-bold text-center mb-10 text-cyan-300">
+          Terms of Service
         </h1>
 
-        <div className="space-y-8 text-gray-700">
+        <div className="space-y-8 text-gray-200">
           <div>
-            <h2 className="text-2xl font-semibold mb-4">1. Introduction</h2>
+            <h2 className="text-2xl font-semibold mb-4 text-white">1. Acceptance</h2>
             <p>
-              Welcome to CodeSouq. By accessing or using our website and
-              services, you agree to comply with and be bound by the following
-              Terms of Policy. Please review them carefully. If you do not agree
-              to these terms, you should not use our services.
+              By accessing and using AlgorithInn’s services, you agree to comply with and be bound by the following terms and conditions.
             </p>
           </div>
 
           <div>
-            <h2 className="text-2xl font-semibold mb-4">2. Use of Our Services</h2>
+            <h2 className="text-2xl font-semibold mb-4 text-white">2. Services</h2>
             <p>
-              CodeSouq provides software development, digital solutions, and
-              related services. You agree to use our services only for lawful
-              purposes and in accordance with these terms.
+              We offer AI-powered web solutions and digital tools for businesses. All services are subject to availability and modification.
             </p>
           </div>
 
           <div>
-            <h2 className="text-2xl font-semibold mb-4">3. Intellectual Property</h2>
+            <h2 className="text-2xl font-semibold mb-4 text-white">3. User Responsibilities</h2>
+            <ul className="list-disc list-inside ml-4">
+              <li>Provide accurate information</li>
+              <li>Respect intellectual property rights</li>
+              <li>Abide by applicable laws and regulations</li>
+            </ul>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-semibold mb-4 text-white">4. Intellectual Property</h2>
             <p>
-              All content, trademarks, and intellectual property on this site
-              are owned by CodeSouq unless otherwise stated. Unauthorized use of
-              any materials without prior written consent is strictly
-              prohibited.
+              All content, trademarks, and technologies are the property of AlgorithInn unless otherwise stated.
             </p>
           </div>
 
           <div>
-            <h2 className="text-2xl font-semibold mb-4">4. Privacy</h2>
+            <h2 className="text-2xl font-semibold mb-4 text-white">5. Termination</h2>
             <p>
-              Your privacy is important to us. We are committed to protecting
-              your personal information. Please review our Privacy Policy to
-              understand how we collect, use, and safeguard your data.
+              We reserve the right to suspend or terminate access if users violate these terms.
             </p>
           </div>
 
           <div>
-            <h2 className="text-2xl font-semibold mb-4">5. Limitation of Liability</h2>
+            <h2 className="text-2xl font-semibold mb-4 text-white">6. Changes to Terms</h2>
             <p>
-              CodeSouq is not liable for any indirect, incidental, special, or
-              consequential damages arising out of or related to your use of our
-              services or website.
+              AlgorithInn may revise these Terms at any time. Updates will be posted on this page with a revised effective date.
             </p>
           </div>
 
           <div>
-            <h2 className="text-2xl font-semibold mb-4">6. Changes to These Terms</h2>
+            <h2 className="text-2xl font-semibold mb-4 text-white">7. Contact</h2>
             <p>
-              We may update these Terms of Policy from time to time. We
-              encourage you to review this page periodically for any changes.
-              Your continued use of our services after changes means you accept
-              those changes.
-            </p>
-          </div>
-
-          <div>
-            <h2 className="text-2xl font-semibold mb-4">7. Contact Us</h2>
-            <p>
-              If you have any questions about these Terms of Policy, please
-              contact us at{" "}
-              <span className="text-blue-600 underline">
-                support@codesouq.ae
-              </span>
-              .
+              For questions about these Terms, email us at{" "}
+              <a href="mailto:support@algorithinn.ae" className="text-cyan-400 underline">
+                support@algorithinn.ae
+              </a>.
             </p>
           </div>
         </div>
@@ -81,4 +66,4 @@ const TermsOfPolicy = () => {
   );
 };
 
-export default TermsOfPolicy;
+export default TermsOfService;

@@ -113,7 +113,7 @@ const AboutSection = () => {
               </div> */}
 
               {/* Tech Stack */}
-              <div className="mt-10">
+              {/* <div className="mt-10">
                 <h3 className="text-lg font-semibold text-gray-300 mb-4">
                   Our Technology Expertise
                 </h3>
@@ -121,15 +121,16 @@ const AboutSection = () => {
                   {[
                     "React",
                     "Next.js",
+                    "Angular",
                     "Node.js",
                     "TypeScript",
                     "JavaScript",
-                    "AWS",
-                    "Docker",
+                    "Shopify",
+                    "Wordpress",
                     "MongoDB",
-                    "GraphQL",
+                    "n8n",
                     "Langchain",
-                    "ChromaDB",
+                    "Chatbots",
                   ].map((tech, index) => (
                     <span
                       key={index}
@@ -139,7 +140,7 @@ const AboutSection = () => {
                     </span>
                   ))}
                 </div>
-              </div>
+              </div> */}
             </div>
           </motion.div>
         </div>
