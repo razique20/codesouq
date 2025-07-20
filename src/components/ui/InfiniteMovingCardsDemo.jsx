@@ -42,7 +42,7 @@ const testimonials = [
   {
     quote:
       "Every algorithm we craft brings ideas closer to reality, and intelligence closer to humanity.",
-    name: "AlgorithInn",
+    name: "AlgorithInn RD",
     title: "R&D Department",
   },
 ];

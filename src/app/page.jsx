@@ -1,6 +1,7 @@
 import TechnologyExpertise from "@/components/TechnologyExpertise";
 import { CarouselDemo } from "@/components/ui/CarouselDemo";
 import { ColourfulTextDemo } from "@/components/ui/ColourfulTextDemo";
+import { FeaturesSectionDemo } from "@/components/ui/FeaturesSectionDemo";
 import { HeroSectionOne } from "@/components/ui/HeroSectionOne";
 import { InfiniteMovingCardsDemo } from "@/components/ui/InfiniteMovingCardsDemo";
 import { PlaceholdersAndVanishInputDemo } from "@/components/ui/PlaceholdersAndVanishInputDemo";
@@ -19,7 +20,7 @@ export default function HomePage() {
           aria-hidden="true"
         >
           {/* Diagonal gradient overlay */}
-          <div className="absolute inset-0 bg-gradient-to-tr from-violet-900/20 to-black/80"></div>
+          {/* <div className="absolute inset-0 bg-gradient-to-tr from-violet-900/20 to-black/80"></div> */}
         </div>
 
         <HeroSectionOne />
@@ -30,17 +31,15 @@ export default function HomePage() {
         <PlaceholdersAndVanishInputDemo />
         <TechnologyExpertise />
         <CarouselDemo />
+        <FeaturesSectionDemo />
+
         <InfiniteMovingCardsDemo />
-
-        <TextHoverEffectDemo />
-
-        
 
         {/* <ServicesSection /> */}
         <ProjectForm />
 
         <WobbleCardDemo />
-
+       
       </div>
     </div>
   );

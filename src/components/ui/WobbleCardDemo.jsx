@@ -19,7 +19,7 @@ export function WobbleCardDemo() {
           </p>
         </div>
         <img
-          src="/linear.webp"
+          src="/assets/ai2.jpg"
           width={500}
           height={500}
           alt="ai technology demo image"
@@ -48,7 +48,7 @@ export function WobbleCardDemo() {
           </p>
         </div>
         <img
-          src="/linear.webp"
+          src="/assets/ai3.jpg"
           width={500}
           height={500}
           alt="ai app mockup"

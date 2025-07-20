@@ -42,8 +42,8 @@ const AboutSection = () => {
             className="w-full lg:w-2/5 flex justify-center"
           >
             <div className="relative">
-              <div className="absolute -inset-4 bg-gradient-to-tr from-purple-600/20 to-cyan-500/20 rounded-2xl rotate-3 blur-md"></div>
-              <div className="relative overflow-hidden rounded-2xl border border-white/10 shadow-2xl">
+              <div className="absolute -inset-4  rotate-3 blur-md"></div>
+              <div className="relative overflow-hidden ">
                 <Image
                   src="/assets/a23.png"
                   alt="About Algorithinn"
@@ -52,7 +52,7 @@ const AboutSection = () => {
                   className="object-cover w-full h-auto"
                   priority
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+                <div className="absolute inset-0  via-transparent to-transparent"></div>
               </div>
             </div>
           </motion.div>
@@ -64,13 +64,8 @@ const AboutSection = () => {
             transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
             className="w-full lg:w-3/5"
           >
-            <div className="bg-gradient-to-br from-gray-900/70 to-gray-900/50 backdrop-blur-xl border border-white/10 rounded-3xl p-8 md:p-12 shadow-2xl shadow-purple-900/10">
-              <div className="flex items-center gap-3 mb-8">
-                <div className="w-12 h-0.5 bg-gradient-to-r from-cyan-400 to-purple-500"></div>
-                <span className="text-cyan-400 font-medium tracking-wider">
-                  ABOUT US
-                </span>
-              </div>
+            <div className="backdrop-blur-xl ">
+            
 
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 bg-gradient-to-r from-cyan-300 via-purple-300 to-cyan-300 bg-clip-text text-transparent">
                 Pioneering Digital Solutions from the UAE

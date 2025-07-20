@@ -43,7 +43,7 @@ const technologies = [
 
 const TechnologyExpertise = () => {
   return (
-    <div className="max-w-4xl mx-auto mb-10 mt-12 p-6 md:p-8 bg-gray-900/70 backdrop-blur-lg border border-indigo-900/50 rounded-2xl shadow-2xl shadow-indigo-950/50 relative overflow-hidden">
+    <div className="max-w-4xl mx-auto mb-10 mt-12 p-6 md:p-8  relative overflow-hidden">
       {/* Decorative blobs */}
       <div className="absolute -top-32 -right-32 w-64 h-64 bg-indigo-700/20 rounded-full blur-3xl -z-10" />
       <div className="absolute -bottom-32 -left-32 w-64 h-64 bg-purple-700/20 rounded-full blur-3xl -z-10" />
