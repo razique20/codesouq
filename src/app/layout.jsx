@@ -19,7 +19,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Algrithinn",
+  title: "Algorithinn",
   description: "Intelligence,Innovated,",
   icons: {
     icon: "/favicon.svg",

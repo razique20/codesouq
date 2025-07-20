@@ -13,7 +13,7 @@ export function ColourfulTextDemo() {
         animate={{ opacity: 0.5 }}
         transition={{ duration: 1 }}
       />
-      <h1 className="text-2xl md:text-5xl lg:text-7xl font-bold text-center text-white relative z-2 font-sans">
+      <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold text-center text-white relative z-2 font-sans">
         Where <ColourfulText text="AI" /> meets <br /> <ColourfulText text="Algorithms" />
       </h1>
     </div>
