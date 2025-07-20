@@ -1,7 +1,7 @@
 // FloatingNavDemo.jsx
 "use client";
 import React from "react";
-import { FloatingNav } from "../ui/floating-navbar";
+import { FloatingNav } from "./floating-navbar";
 import {
   IconHome,
   IconMessage,
