@@ -3,7 +3,6 @@ import { CarouselDemo } from "@/components/ui/CarouselDemo";
 import { ColourfulTextDemo } from "@/components/ui/ColourfulTextDemo";
 import { FeaturesSectionDemo } from "@/components/ui/FeaturesSectionDemo";
 import { HeroSectionOne } from "@/components/ui/HeroSectionOne";
-import { InfiniteMovingCardsDemo } from "@/components/ui/InfiniteMovingCardsDemo";
 import { PlaceholdersAndVanishInputDemo } from "@/components/ui/PlaceholdersAndVanishInputDemo";
 import { TextHoverEffectDemo } from "@/components/ui/TextHoverEffectDemo";
 import { WobbleCardDemo } from "@/components/ui/WobbleCardDemo";
@@ -12,7 +11,7 @@ import ProjectForm from "../components/ProjectForm";
 
 export default function HomePage() {
   return (
-    <div className="bg-theme min-h-screen">
+    <div className=" min-h-screen">
       <div className="relative isolate">
         {/* Subtle grid pattern overlay */}
         <div
@@ -33,7 +32,7 @@ export default function HomePage() {
         <CarouselDemo />
         <FeaturesSectionDemo />
 
-        <InfiniteMovingCardsDemo />
+      
 
         {/* <ServicesSection /> */}
         <ProjectForm />

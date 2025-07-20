@@ -6,35 +6,34 @@ import Link from "next/link";
 export function HeroSectionOne() {
   return (
     <div className="relative mx-auto my-10 flex max-w-7xl flex-col items-center justify-center min-h-screen">
-     
       <div className="px-4 py-10 md:py-20">
-        <h1 className="relative z-10 mx-auto max-w-4xl text-center text-2xl font-bold text-slate-700 md:text-4xl lg:text-7xl dark:text-slate-300">
-  {"AlgorithInn ,Where ideas meet intelligence"
-    .split(" ")
-    .map((word, index) => {
-      const isBrand = word.trim().includes("AlgorithInn");
+        <h1 className="relative z-10 mx-auto max-w-4xl text-center text-2xl font-bold  md:text-4xl lg:text-7xl text-slate-300">
+          {"AlgorithInn ,Where ideas meet intelligence"
+            .split(" ")
+            .map((word, index) => {
+              const isBrand = word.trim().includes("AlgorithInn");
 
-      return (
-        <motion.span
-          key={index}
-          initial={{ opacity: 0, filter: "blur(4px)", y: 10 }}
-          animate={{ opacity: 1, filter: "blur(0px)", y: 0 }}
-          transition={{
-            duration: 0.3,
-            delay: index * 0.1,
-            ease: "easeInOut",
-          }}
-          className={`mr-2 inline-block ${
-            isBrand
-              ? "bg-gradient-to-r from-violet-100 to-purple-700 text-transparent bg-clip-text dark:from-violet-200 dark:to-purple-600"
-              : ""
-          }`}
-        >
-          {word}
-        </motion.span>
-      );
-    })}
-</h1>
+              return (
+                <motion.span
+                  key={index}
+                  initial={{ opacity: 0, filter: "blur(4px)", y: 10 }}
+                  animate={{ opacity: 1, filter: "blur(0px)", y: 0 }}
+                  transition={{
+                    duration: 0.3,
+                    delay: index * 0.1,
+                    ease: "easeInOut",
+                  }}
+                  className={`mr-2 inline-block ${
+                    isBrand
+                      ? "bg-gradient-to-r text-transparent bg-clip-text from-violet-200 to-purple-600"
+                      : ""
+                  }`}
+                >
+                  {word}
+                </motion.span>
+              );
+            })}
+        </h1>
 
         <motion.p
           initial={{
@@ -47,7 +46,7 @@ export function HeroSectionOne() {
             duration: 0.3,
             delay: 0.8,
           }}
-          className="relative z-10 mx-auto max-w-xl py-4 text-center text-lg font-normal text-neutral-600 dark:text-neutral-400"
+          className="relative z-10 mx-auto max-w-xl py-4 text-center text-lg font-normal text-neutral-400"
         >
           Empowering innovation through cutting-edge software solutions and
           AI-driven creativity to transform your vision into reality.
@@ -66,18 +65,17 @@ export function HeroSectionOne() {
           className="relative z-10 mt-8 flex flex-wrap items-center justify-center gap-4"
         >
           <Link href="/services">
-            <button className="w-60 transform rounded-lg bg-black px-6 py-2 font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200">
+            <button className="w-60 transform rounded-lg border px-6 py-2 font-medium  transition-all duration-300 hover:-translate-y-0.5 border-gray-700 bg-black text-white hover:bg-gray-900">
               Explore Now
             </button>
           </Link>
 
           <Link href="/contact">
-            <button className="w-60 transform rounded-lg border border-gray-300 bg-white px-6 py-2 font-medium text-black transition-all duration-300 hover:-translate-y-0.5 hover:bg-gray-100 dark:border-gray-700 dark:bg-black dark:text-white dark:hover:bg-gray-900">
+            <button className="w-60 transform rounded-lg border px-6 py-2 font-medium  transition-all duration-300 hover:-translate-y-0.5 border-gray-700 bg-black text-white hover:bg-gray-900">
               Contact Support
             </button>
           </Link>
         </motion.div>
-        
       </div>
     </div>
   );
