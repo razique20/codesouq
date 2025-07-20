@@ -5,7 +5,7 @@ import React from "react";
 
 export function ColourfulTextDemo() {
   return (
-    <div className="h-screen w-full flex items-center justify-center relative overflow-hidden bg-black">
+    <div className="h-screen w-full flex items-center justify-center relative overflow-hidden bg-black ">
       <motion.img
         src="https://assets.aceternity.com/linear-demo.webp"
         className="h-full w-full object-cover absolute inset-0 [mask-image:radial-gradient(circle,transparent,black_80%)] pointer-events-none"

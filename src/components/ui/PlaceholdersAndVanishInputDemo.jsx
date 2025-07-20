@@ -23,7 +23,7 @@ export function PlaceholdersAndVanishInputDemo() {
   return (
     <div className="h-[10rem] flex flex-col justify-center items-center px-4">
       <h2 className="mb-10 sm:mb-20 text-xl text-center sm:text-5xl dark:text-white text-black">
-        Ask <span className="text-violet-500 font-bold">AlgorithInn AI</span>{" "}
+        Ask <span className="bg-gradient-to-r from-white via-purple-300 to-violet-800 bg-clip-text text-transparent font-bold">AlgorithInn AI</span>{" "}
         Anything
       </h2>
       <PlaceholdersAndVanishInput

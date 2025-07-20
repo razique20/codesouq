@@ -27,7 +27,7 @@ const TechnologyExpertise = () => {
         <div className="absolute -bottom-32 -left-32 w-64 h-64 bg-purple-700/20 rounded-full blur-3xl -z-10" /> */}
 
         <div className="relative z-10 text-center mb-8">
-          <h2 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-purple-100 via-indigo-300 to-violet-700 bg-clip-text text-transparent">
+          <h2 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-white via-indigo-300 to-violet-700 bg-clip-text text-transparent">
             Our Technology Expertise
           </h2>
           <p className="mt-2 text-gray-400 max-w-md mx-auto">

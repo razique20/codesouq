@@ -5,10 +5,10 @@ import Link from "next/link";
 
 export function HeroSectionOne() {
   return (
-    <div className="relative mx-auto my-10 flex max-w-7xl flex-col items-center justify-center min-h-screen px-4">
+    <div className="relative mx-auto  flex max-w-7xl flex-col items-center justify-center min-h-screen px-4 bg-black">
       <div className="py-10 md:py-20 w-full">
         <h1 className="relative z-10 mx-auto max-w-4xl text-center text-2xl sm:text-2xl md:text-4xl lg:text-7xl font-bold text-slate-300 leading-snug sm:leading-tight md:leading-snug">
-          {"AlgorithInn Where ideas meet intelligence"
+          {"AlgorithInn – Innovate Intelligently"
             .split(" ")
             .map((word, index) => {
               const isBrand = word.trim().includes("AlgorithInn");

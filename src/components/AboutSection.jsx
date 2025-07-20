@@ -67,13 +67,13 @@ const AboutSection = () => {
             <div className="backdrop-blur-xl ">
             
 
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 bg-gradient-to-r from-cyan-300 via-purple-300 to-cyan-300 bg-clip-text text-transparent">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 bg-gradient-to-r from-white via-purple-300 to-violet-800 bg-clip-text text-transparent">
                 Pioneering Digital Solutions from the UAE
               </h2>
 
               <div className="space-y-6">
                 <p className="text-gray-300 text-lg leading-relaxed">
-                  <span className="text-cyan-400 font-medium">Algorithinn</span>{" "}
+                  <span className="text-violet-700 font-medium">Algorithinn</span>{" "}
                   is a UAE-based software development powerhouse dedicated to
                   crafting modern, scalable solutions that propel businesses
                   forward in the digital landscape.
