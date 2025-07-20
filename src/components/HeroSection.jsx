@@ -1,6 +1,7 @@
 'use client';
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
+import { BackgroundLinesDemo } from './ui/BackgroundLinesDemo';
 
 const HeroSection = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -78,6 +79,9 @@ const HeroSection = () => {
   }, [isMobile]);
 
   return (
+    <>
+
+    {/* <BackgroundLinesDemo/> */}
     <section className="relative w-full min-h-[75vh] md:min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-[#0a0315] via-[#120720] to-[#0a0315]">
       {/* Subtle connection lines canvas */}
       <canvas className="connection-canvas absolute inset-0 z-0 opacity-90" />
@@ -296,6 +300,7 @@ const HeroSection = () => {
       <div className="hidden md:block absolute top-0 left-0 w-40 h-40 border-t-2 border-l-2 border-purple-700/10 z-10"></div>
       <div className="hidden md:block absolute bottom-0 right-0 w-40 h-40 border-b-2 border-r-2 border-purple-700/10 z-10"></div>
     </section>
+    </>
   );
 };
 

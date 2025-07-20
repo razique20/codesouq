@@ -1,7 +1,9 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import dynamic from "next/dynamic";
-import Chatbot from "@/components/Chatbot";
+import { BackgroundLinesDemo } from "@/components/ui/BackgroundLinesDemo";
+import { FloatingNavDemo } from "@/components/ui/FloatingNavbarDemo";
+// import Chatbot from "@/components/Chatbot";
 
 const Navbar = dynamic(() => import("../components/Navbar"));
 const Footer = dynamic(() => import("../components/Footer"));
@@ -34,7 +36,9 @@ export default function RootLayout({ children }) {
 
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}>
-        <Navbar />
+        {/* <Navbar /> */}
+        <FloatingNavDemo/>
+        <BackgroundLinesDemo/>
         <main className="flex-grow">{children}</main>
         {/* <Chatbot/> */}
         <Footer />

@@ -53,7 +53,7 @@ const Navbar = () => {
             {navItems.map((item) => (
               <li key={item}>
                 <Link
-                  href={item === "Projects" ? "/projects" : `/#${item.toLowerCase()}`}
+                  href={item === "Projects" ? "/projects" : item ===  "Contact" ? "/contact" : `/#${item.toLowerCase()}`}
                   className="hover:text-purple-400 transition-colors"
                 >
                   {item}
