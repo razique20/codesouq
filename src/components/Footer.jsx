@@ -66,14 +66,7 @@ const Footer = () => {
               <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                 <FaLinkedin className="text-blue-700 text-2xl hover:scale-110 transition-transform" />
               </a>
-              {/* <a
-                href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="WhatsApp"
-              >
-                <FaWhatsapp className="text-green-700 text-2xl hover:scale-110 transition-transform" />
-              </a> */}
+            
             </div>
             <p className="text-gray-400 text-sm">
               Stay updated with our latest projects and resources.
