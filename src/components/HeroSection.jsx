@@ -248,7 +248,7 @@ const HeroSection = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.8 }}
           >
-            At Algorithinn, we craft algorithms for business growth.
+            Crafting algorithms for exponential business growth
           </motion.p>
 
           <motion.div
