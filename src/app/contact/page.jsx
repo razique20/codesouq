@@ -104,9 +104,10 @@ export default function ContactPage() {
               <li>
                 <strong>Email:</strong> algorithinn@gmail.com
               </li>
-              <li>
-                <strong>Phone:</strong> +971 0504220329
+               <li>
+                <strong>Email:</strong> info@algorithinn.com
               </li>
+             
               <li>
                 <strong>Address:</strong> Dubai, UAE
               </li>
