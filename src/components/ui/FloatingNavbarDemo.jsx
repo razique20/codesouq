@@ -8,6 +8,7 @@ import {
   IconUser,
   IconFolders,
   IconTools,
+  IconCurrencyDollar,
 } from "@tabler/icons-react";
 
 export function FloatingNavDemo() {
@@ -43,9 +44,9 @@ export function FloatingNavDemo() {
       name: "Pricing",
       link: "/pricing",
       icon: (
-        <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
+        <IconCurrencyDollar className="h-4 w-4 text-neutral-500 dark:text-white" />
       ),
-    },
+    }
   ];
   return (
     <div className="relative w-full">

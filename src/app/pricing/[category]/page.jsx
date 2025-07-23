@@ -9,8 +9,8 @@ export default function PricingPage({ params }) {
   if (!data) return notFound();
 
   return (
-    <div className="max-w-7xl mx-auto py-12 px-6">
-      <h1 className="text-4xl font-bold mb-4 text-center">{data.title}</h1>
+    <div className="max-w-7xl mx-auto py-12 px-6 min-h-screen items-center">
+      <h1 className="text-4xl font-bold mb-7 text-center">{data.title}</h1>
       <PricingTable plans={data.plans} />
     </div>
   );

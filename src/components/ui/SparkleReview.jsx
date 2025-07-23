@@ -4,7 +4,7 @@ import { SparklesCore } from "./HeroSparkle";
 
 export function SparklesPreview() {
   return (
-    <div className="relative h-[40rem] w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md px-4">
+    <div className="relative min-h-screen w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md px-4">
       {/* Subheading */}
      
 
