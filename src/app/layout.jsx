@@ -2,6 +2,7 @@ import { FloatingNavDemo } from "@/components/ui/FloatingNavbarDemo";
 import dynamic from "next/dynamic";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Script from "next/script";
 // import Chatbot from "@/components/Chatbot";
 
 const Navbar = dynamic(() => import("../components/Navbar"));
@@ -36,6 +37,19 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}
       >
+
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-5JM64ZYQQ3"
+        />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-5JM64ZYQQ3');
+          `}
+        </Script>
         {/* <Navbar /> */}
         <FloatingNavDemo />
         <main className="flex-grow">{children}</main>
