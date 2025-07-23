@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://algorithinn.com
+
+# Sitemaps
+Sitemap: https://algorithinn.com/sitemap.xml
