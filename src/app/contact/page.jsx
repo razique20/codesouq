@@ -17,10 +17,28 @@ export default function ContactPage() {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setFormSubmitted(true);
-    console.log("Form Submitted", formData);
+    try {
+      const res = await fetch("https://formspree.io/f/xeozgbgj", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (res.ok) {
+        setFormSubmitted(true);
+        setFormData({ name: "", email: "", message: "" });
+      } else {
+        alert("There was an error. Please try again.");
+      }
+    } catch (error) {
+      console.error("Form error:", error);
+      alert("Submission failed. Please try later.");
+    }
   };
 
   return (
@@ -38,7 +56,8 @@ export default function ContactPage() {
             Contact Us
           </h2>
           <p className="mt-2 text-gray-400 max-w-2xl mx-auto">
-            We’d love to hear from you! Fill out the form or reach us through the info below.
+            We’d love to hear from you! Fill out the form or reach us through
+            the info below.
           </p>
         </div>
 
@@ -104,10 +123,9 @@ export default function ContactPage() {
               <li>
                 <strong>Email:</strong> algorithinn@gmail.com
               </li>
-               <li>
+              <li>
                 <strong>Email:</strong> info@algorithinn.com
               </li>
-             
               <li>
                 <strong>Address:</strong> Dubai, UAE
               </li>
